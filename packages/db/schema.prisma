@@ -1,0 +1,49 @@
+// This is the main Prisma schema file for Inkspire
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider             = "prisma-client-py"
+  interface            = "asyncio"
+  recursive_type_depth = 5
+}
+
+// User model for authentication
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  boards    Board[]
+}
+
+// Board represents a canvas/workspace
+model Board {
+  id          String        @id @default(uuid())
+  title       String
+  description String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  userId      String
+  user        User          @relation(fields: [userId], references: [id])
+  elements    BoardElement[]
+}
+
+// BoardElement represents items on the canvas (sticky notes, shapes, text, etc)
+model BoardElement {
+  id        String    @id @default(uuid())
+  type      String    // "sticky-note", "shape", "text", "connector", "image"
+  content   Json      // Flexible JSON content based on type
+  position  Json      // {x, y} coordinates
+  size      Json?     // {width, height} if applicable
+  style     Json?     // styling information
+  zIndex    Int       @default(0)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  boardId   String
+  board     Board     @relation(fields: [boardId], references: [id], onDelete: Cascade)
+}
