@@ -36,7 +36,7 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center py-24 px-4">
         <div className="bg-white/60 backdrop-blur-lg rounded-3xl shadow-2xl border border-indigo-100 max-w-4xl mx-auto px-10 py-14 flex flex-col items-center animate-fadeIn">
           <h1 className="text-6xl md:text-7xl font-extrabold text-center bg-gradient-to-tr from-indigo-800 to-blue-500 bg-clip-text text-transparent mb-4 animate-slideIn tracking-tight drop-shadow-lg">
-            Inkspire
+            Inkspiree
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-700 text-center mb-8 font-medium animate-fadeIn">
             AI-powered Infinite Canvas for Brainstorming & Collaboration
@@ -49,7 +49,7 @@ export default function Home() {
               View Your Boards
             </Link>
             <a
-              href="https://github.com/inkspire-ai"
+              href="https://github.com/inkspiree-ai"
               target="_blank"
               rel="noopener"
               className="bg-white/80 border border-indigo-200 text-indigo-600 font-bold py-3 px-10 rounded-xl shadow hover:bg-indigo-50 transition-all text-lg"
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="w-full text-center py-6 text-xs text-gray-400 bg-white/60 border-t border-gray-200 mt-8 rounded-t-2xl shadow-inner">
-        <span>AI-powered brainstorming & storyboarding &copy; {new Date().getFullYear()} Inkspire</span>
+        <span>AI-powered brainstorming & storyboarding &copy; {new Date().getFullYear()} Inkspiree</span>
       </footer>
     </div>
   );

@@ -18,6 +18,6 @@ async def init_db():
     # Check if DATABASE_URL is set
     if not os.environ.get("DATABASE_URL"):
         print("WARNING: DATABASE_URL environment variable not found. Using default URL.")
-        os.environ["DATABASE_URL"] = "postgresql://postgres:postgres@localhost:5433/inkspire"
+        os.environ["DATABASE_URL"] = "postgresql://postgres:postgres@localhost:5433/inkspiree"
         
     await prisma.connect()

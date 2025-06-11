@@ -1,6 +1,6 @@
-# Inkspire API
+# Inkspiree API
 
-The FastAPI backend service powering the Inkspire infinite canvas application. This service provides a robust, scalable API for managing boards, elements, and AI-powered features.
+The FastAPI backend service powering the Inkspiree infinite canvas application. This service provides a robust, scalable API for managing boards, elements, and AI-powered features.
 
 ## ✨ Features
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the `apps/api` directory:
 ```env
-DATABASE_URL=postgresql://username:password@localhost:5432/inkspire
+DATABASE_URL=postgresql://username:password@localhost:5432/inkspiree
 OPENAI_API_KEY=your_openai_api_key_here  # Optional for AI features
 ```
 
@@ -131,7 +131,7 @@ docker-compose up -d
 
 #### Option 2: Local PostgreSQL
 1. Install PostgreSQL locally
-2. Create a database named `inkspire`
+2. Create a database named `inkspiree`
 3. Update the `DATABASE_URL` in your `.env` file
 
 ### Running the API
@@ -139,7 +139,7 @@ docker-compose up -d
 Start the development server:
 ```bash
 # Ensure you're in the apps/api directory
-cd /path/to/inkspire/apps/api
+cd /path/to/inkspiree/apps/api
 
 # Activate virtual environment
 source venv/bin/activate
@@ -447,7 +447,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ## 📋 License
 
-This project is part of the Inkspire application and follows the same license terms.
+This project is part of the Inkspiree application and follows the same license terms.
 
 Run tests with:
 

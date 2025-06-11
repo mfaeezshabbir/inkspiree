@@ -1,6 +1,6 @@
-# Inkspire Web Application
+# Inkspiree Web Application
 
-The Next.js frontend application for Inkspire - an AI-powered infinite canvas for creative collaboration. This modern React application provides an intuitive interface for creating, organizing, and collaborating on ideas through an infinite canvas experience.
+The Next.js frontend application for Inkspiree - an AI-powered infinite canvas for creative collaboration. This modern React application provides an intuitive interface for creating, organizing, and collaborating on ideas through an infinite canvas experience.
 
 ## ✨ Features
 
@@ -67,7 +67,7 @@ The Next.js frontend application for Inkspire - an AI-powered infinite canvas fo
 ### Prerequisites
 - **Node.js**: Version 18 or higher
 - **npm**: Comes with Node.js
-- **Backend API**: Inkspire API running on port 8001
+- **Backend API**: Inkspiree API running on port 8001
 
 ### Installation
 
@@ -365,4 +365,4 @@ npm test
 
 ## 📄 License
 
-This project is part of the Inkspire application suite and follows the same license terms as the main project.
+This project is part of the Inkspiree application suite and follows the same license terms as the main project.

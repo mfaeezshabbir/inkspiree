@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from db.client import prisma, init_db
 from routes import boards, elements, ai_router
 
-app = FastAPI(title="Inkspire API", description="API for Inkspire infinite canvas application")
+app = FastAPI(title="Inkspiree API", description="API for Inkspiree infinite canvas application")
 
 # Configure CORS with more specific settings for the local environment
 app.add_middleware(
@@ -25,7 +25,7 @@ app.include_router(ai_router)
 
 @app.get("/")
 def read_root():
-    return {"message": "Inkspire API is running!"}
+    return {"message": "Inkspiree API is running!"}
 
 @app.get("/health")
 def health_check():

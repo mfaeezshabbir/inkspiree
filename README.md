@@ -1,4 +1,4 @@
-# Inkspire
+# Inkspiree
 
 AI-Powered Infinite Canvas for Creative Collaboration & Brainstorming
 
@@ -67,7 +67,7 @@ A modern web application that provides an infinite canvas for creating, organizi
 # Using Docker (recommended)
 docker-compose up -d
 
-# Or start your local PostgreSQL and create database 'inkspire'
+# Or start your local PostgreSQL and create database 'inkspiree'
 ```
 
 ### 2. Backend Setup
@@ -132,7 +132,7 @@ npm run dev
 
 ### Project Structure
 ```
-inkspire/
+inkspiree/
 ├── apps/
 │   ├── web/          # Next.js frontend application
 │   └── api/          # FastAPI backend service

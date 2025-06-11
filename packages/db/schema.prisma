@@ -1,4 +1,4 @@
-// This is the main Prisma schema file for Inkspire
+// This is the main Prisma schema file for Inkspiree
 
 datasource db {
   provider = "postgresql"

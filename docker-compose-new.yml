@@ -1,15 +1,15 @@
 services:
   postgres:
     image: postgres:16
-    container_name: inkspire-postgres
+    container_name: inkspiree-postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: inkspire
+      POSTGRES_DB: inkspiree
     ports:
       - "5433:5432"
     volumes:
-      - inkspire-postgres-data:/var/lib/postgresql/data
+      - inkspiree-postgres-data:/var/lib/postgresql/data
 
 volumes:
-  inkspire-postgres-data:
+  inkspiree-postgres-data:

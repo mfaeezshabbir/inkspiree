@@ -91,7 +91,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Inkspire Infinite Canvas",
+  title: "Inkspiree Infinite Canvas",
   description:
     "AI-powered infinite canvas for brainstorming, storyboarding, and collaboration.",
 };
@@ -128,7 +128,7 @@ export default function RootLayout({
                 </svg>
               </span>
               <span className="text-2xl font-extrabold bg-gradient-to-tr from-indigo-700 to-blue-500 bg-clip-text text-transparent group-hover:underline tracking-tight">
-                Inkspire
+                Inkspiree
               </span>
             </Link>
           </div>
@@ -140,7 +140,7 @@ export default function RootLayout({
               Boards
             </Link>
             <a
-              href="https://github.com/inkspire-ai"
+              href="https://github.com/inkspiree-ai"
               target="_blank"
               rel="noopener"
               className="text-base font-semibold text-gray-400 hover:text-indigo-500 transition px-3 py-1 rounded-lg hover:bg-indigo-50"
@@ -204,7 +204,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="w-full text-center py-6 text-xs text-gray-400 bg-white/60 border-t border-gray-200 mt-8 rounded-t-2xl shadow-inner">
           <span>
-            AI-powered infinite canvas &copy; {new Date().getFullYear()} Inkspire
+            AI-powered infinite canvas &copy; {new Date().getFullYear()} Inkspiree
           </span>
         </footer>
       </body>

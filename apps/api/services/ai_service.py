@@ -1,5 +1,5 @@
 """
-AI Service for Inkspire - handling AI-powered features
+AI Service for Inkspiree - handling AI-powered features
 """
 import json
 from typing import Dict, List, Any, Optional
